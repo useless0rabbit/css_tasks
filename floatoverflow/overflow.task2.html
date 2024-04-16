@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+
+<!-- Описание в конце документа -->
+
+<!--
+
+    ЗАДАЧА: разместить вложенными друг в друга 5 дивов
+    при этом в первом есть горизонтальная прокрутка,
+    во-втором - вертикальная, 
+    в третьем - горизонтальная
+    и тд
+
+-->
+
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>CSS: свойство overflow</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <style>
+    div {
+            border: 1px solid rgb(121, 11, 11);
+            height: 500px;
+            width: 500px;
+            overflow-x:scroll;
+            overflow-y:hidden;
+    }
+    div div{
+            border: 1px solid rgb(121, 11, 11);
+            height: 400px;
+            width: 400px;
+            overflow-y:scroll;
+            overflow-x:hidden;
+    }
+    div div div{
+            border: 1px solid rgb(121, 11, 11);
+            height: 300px;
+            width: 300px;
+            overflow-x:scroll;
+            overflow-y:hidden;
+    }
+    div div div div{
+            border: 1px solid rgb(121, 11, 11);
+            height: 200px;
+            width: 200px;
+            overflow-y:scroll;
+            overflow-x:hidden;
+    }
+    div div div div div{
+            border: 1px solid rgb(121, 11, 11);
+            height: 100px;
+            width: 100px;
+            overflow-x:scroll;
+            overflow-y:hidden;
+    }
+    </style>
+</head>
+<body>
+   <div>
+        <div>
+            <div>
+                <div>
+                    <div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+   </div>
+</body>
+</html>
+
+
+<!--
+
+    Переполнение элемента свойство overflow 
+    
+    По умолчанию при переполнении появляются обе прокрутки (горизонтальная, вертикальная)
+
+    Значения:
+    - scroll - прокрутка есть всегда
+
+    - auto - при переполнении прокрутка появлятся, при отсутствии переполнения - пропадает
+
+    - hidden - скрывать те элементы, которые не поместились при переполнении
+
+    - visible - при переполнении выводить те элементы, которые не поместились
+
+-->

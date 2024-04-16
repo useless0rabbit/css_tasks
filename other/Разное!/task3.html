@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <style>
+        body {
+            height: 100vh;
+        }
+        div {
+            border: 1px solid rgb(45, 174, 224);
+        }
+        body > div {
+            width: 25%;
+            height: 15%;
+            padding: 30px 0 0 30px;
+            overflow: hidden;
+        }
+        div > div {
+            width: 135%;
+            height: 135%;
+            background: chartreuse;
+        }
+    </style>
+</head>
+<body>
+    
+<!--
+
+ЗАДАНИЕ:
+
+1. Элемент DivInner вылезает за пределы своего родителя DivA
+Какое свойство нужно дописать элементу DivA, чтобы скрыть то, что не помещается, не изменяя размеры элемента и родителя
+
+-->
+
+<div class="DivA">
+
+    <div class="DivInner"></div>
+
+</div>
+
+</body>
+</html>
+

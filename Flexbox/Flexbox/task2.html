@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <style>
+        .flex-container {
+            display: flex;
+            width: 300px;
+            height: 300px;
+            border: 1px solid rgb(31, 114, 139);
+            margin: 25px auto 55px;
+            align-items: center;
+            flex-direction: row;
+        }
+        .flex-container2 {
+            display: flex;
+            width: 300px;
+            height: 300px;
+            border: 1px solid rgb(31, 114, 139);
+            margin: 25px auto 55px;
+            align-items: center;
+            flex-direction: column;
+        }
+        div div {
+            width: 50px;
+            height: 50px;
+            border: 1px solid rgb(121, 11, 11);
+            flex-grow: 1;
+        }
+    </style>
+</head>
+<body>
+    
+<!--
+
+ЗАДАНИЕ:
+
+1. Flexbox. Есть 2 flex-контейнера. Нужно сделать так, чтобы в первом flex-элементы были расположены по главной оси, во втором - по поперечной.
+Использовать псевдоклассы.
+
+-->
+
+<div class="flex-container">
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+</div>
+<div class="flex-container2">
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+</div>
+
+</body>
+</html>
+
