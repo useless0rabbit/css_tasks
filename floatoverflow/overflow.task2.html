@@ -19,14 +19,55 @@
     <title>CSS: свойство overflow</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <style>
-      
-     /* здесь стили */
-
-
+    div {
+            border: 1px solid rgb(121, 11, 11);
+            height: 500px;
+            width: 500px;
+            overflow-x:scroll;
+            overflow-y:hidden;
+    }
+    div div{
+            border: 1px solid rgb(121, 11, 11);
+            height: 400px;
+            width: 400px;
+            overflow-y:scroll;
+            overflow-x:hidden;
+    }
+    div div div{
+            border: 1px solid rgb(121, 11, 11);
+            height: 300px;
+            width: 300px;
+            overflow-x:scroll;
+            overflow-y:hidden;
+    }
+    div div div div{
+            border: 1px solid rgb(121, 11, 11);
+            height: 200px;
+            width: 200px;
+            overflow-y:scroll;
+            overflow-x:hidden;
+    }
+    div div div div div{
+            border: 1px solid rgb(121, 11, 11);
+            height: 100px;
+            width: 100px;
+            overflow-x:scroll;
+            overflow-y:hidden;
+    }
     </style>
 </head>
 <body>
-   <!-- здесь блоки вложенные друг в друга -->
+   <div>
+        <div>
+            <div>
+                <div>
+                    <div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+   </div>
 </body>
 </html>
 

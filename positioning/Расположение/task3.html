@@ -6,7 +6,10 @@
     <title>Page Title</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <style>
-        /* здесь стили */
+    .container{
+        display: flex;
+        flex-direction: column;
+    }
     </style>
 </head>
 <body>
@@ -18,9 +21,9 @@
 1. Сделать так, чтобы элемент A располагался над элементом B
 
 -->
-
-<div class="DivA">Элемент А</div>
-<div class="DivB">Элемент В</div>
-
+    <div class="container">
+        <div class="DivA">Элемент А</div>
+        <div class="DivB">Элемент В</div>
+    </div>
 </body>
 </html>
